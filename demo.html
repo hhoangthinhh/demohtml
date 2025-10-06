@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Giới thiệu - [Tên của bạn]</title>
+  <meta name="description" content="Trang cá nhân giới thiệu về [Tên của bạn], kỹ năng, dự án và cách liên hệ.">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7c3aed;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,"Helvetica Neue",Arial;color:#e6eef6;background:linear-gradient(180deg,#071029 0%,#071430 60%);-webkit-font-smoothing:antialiased}
+    .container{max-width:980px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .avatar{width:96px;height:96px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:32px;flex-shrink:0}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);margin-top:20px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .skills{display:flex;flex-direction:column;gap:10px}
+    .skill{display:flex;flex-direction:column}
+    .skill > label{font-size:13px;color:var(--muted);margin-bottom:6px}
+    .bar{height:10px;background:var(--glass);border-radius:999px;overflow:hidden}
+    .bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#06b6d4);border-radius:999px}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    @media (max-width:700px){.projects{grid-template-columns:1fr}}
+    .proj{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:12px;border-radius:10px}
+    .meta{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px}
+    .cta{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+    footer{margin-top:30px;text-align:center;color:var(--muted);font-size:14px}
+    .contact-form input,.contact-form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;margin-bottom:10px}
+    .row{display:flex;gap:12px}
+    .row > *{flex:1}
+    .chip{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.02);color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar" aria-hidden>TD</div>
+      <div>
+        <h1>[Tên của bạn] — Web Developer / IT Enthusiast</h1>
+        <p class="lead">Mình là [Tên của bạn]. Mình tạo ra sản phẩm web đẹp, tối ưu và dễ dùng. Mình có đam mê với lập trình, mạng máy tính và tự học các công nghệ mới.</p>
+        <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+          <span class="chip">📍 Thành phố, Quốc gia</span>
+          <span class="chip">💼 Vị trí / Vai trò</span>
+          <span class="chip">✉️ email@example.com</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2>Giới thiệu ngắn</h2>
+          <p>Viết ở đây một đoạn giới thiệu 2–4 câu về bản thân: nền tảng học vấn, lĩnh vực chuyên môn chính, mục tiêu nghề nghiệp ngắn hạn và dài hạn. Ví dụ: "Mình tốt nghiệp ngành Mạng máy tính, chuyên về phát triển web và bảo mật cơ bản. Mục tiêu hiện tại là phát triển kỹ năng backend và DevOps."</p>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h2>Kỹ năng</h2>
+          <div class="skills">
+            <div class="skill">
+              <label>HTML &amp; CSS — 90%</label>
+              <div class="bar"><i style="width:90%"></i></div>
+            </div>
+            <div class="skill">
+              <label>JavaScript — 85%</label>
+              <div class="bar"><i style="width:85%"></i></div>
+            </div>
+            <div class="skill">
+              <label>Node.js / Backend — 70%</label>
+              <div class="bar"><i style="width:70%"></i></div>
+            </div>
+            <div class="skill">
+              <label>MySQL / Database — 75%</label>
+              <div class="bar"><i style="width:75%"></i></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h2>Dự án tiêu biểu</h2>
+          <div class="projects">
+            <article class="proj">
+              <h3>🧰 Hệ thống quản lý nội dung (CMS)</h3>
+              <p>CMS nhỏ dùng để quản lý bài viết, upload file và phân quyền người dùng.</p>
+              <div class="meta"><span>Tech: Node.js, MySQL</span><a class="cta" href="#">Xem mã nguồn</a></div>
+            </article>
+
+            <article class="proj">
+              <h3>🔐 Công cụ kiểm thử an ninh</h3>
+              <p>Công cụ dòng lệnh hỗ trợ quét lỗ hổng cơ bản cho server nội bộ (mục đích học tập).</p>
+              <div class="meta"><span>Tech: Python, Bash</span><a class="cta" href="#">Chi tiết</a></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h2>Kinh nghiệm</h2>
+          <p><strong>Vị trí / Công ty</strong> — Mô tả ngắn công việc và trách nhiệm. Thêm 1–2 dòng về kết quả hoặc kỹ năng đạt được.</p>
+          <p style="margin-top:8px"><strong>Vị trí / Công ty khác</strong> — Mô tả ngắn. Ví dụ: triển khai hệ thống nội bộ, tối ưu SQL, viết script tự động.</p>
+        </section>
+
+        <section class="card" style="margin-top:14px">
+          <h2>Liên hệ</h2>
+          <p>Nếu bạn muốn trao đổi công việc, hợp tác hoặc hỏi về dự án, vui lòng liên hệ:</p>
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="row">
+              <input type="text" id="name" placeholder="Tên của bạn" required>
+              <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <textarea id="message" rows="5" placeholder="Nội dung" required></textarea>
+            <button type="submit" class="cta">Gửi tin nhắn</button>
+          </form>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>Tóm tắt nhanh</h3>
+          <p class="meta">🎯 Mục tiêu nghề nghiệp</p>
+          <p style="color:var(--muted)">Phát triển năng lực backend, học DevOps và đóng góp cho sản phẩm thực tế.</p>
+
+          <hr style="border:none;height:1px;background:rgba(255,255,255,0.02);margin:12px 0">
+
+          <h3>Kỹ năng khác</h3>
+          <p style="color:var(--muted)">Git, Docker (đang học), Linux, cơ bản về an ninh mạng.</p>
+
+          <hr style="border:none;height:1px;background:rgba(255,255,255,0.02);margin:12px 0">
+
+          <h3>Download</h3>
+          <p style="color:var(--muted)">Bạn có thể đặt link tới CV hoặc GitHub ở đây.</p>
+          <a class="cta" href="#">Tải CV</a>
+        </div>
+
+        <div class="card" style="margin-top:14px;text-align:center">
+          <h3>Kết nối</h3>
+          <p style="color:var(--muted);margin-bottom:12px">LinkedIn • GitHub • Twitter</p>
+          <div style="display:flex;gap:8px;justify-content:center">
+            <a class="chip" href="#">LinkedIn</a>
+            <a class="chip" href="#">GitHub</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <small>© <span id="year"></span> [Tên của bạn]. Thiết kế thân thiện, dễ chỉnh sửa.</small>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      // Mẫu đơn: mở mail client với nội dung (dễ dàng thay bằng gửi qua API)
+      const subject = encodeURIComponent('Tin nhắn từ ' + name);
+      const body = encodeURIComponent(message + '\n\n' + 'Email: ' + email);
+      window.location.href = `mailto:email@example.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
